@@ -1,0 +1,42 @@
+import javax.swing.*;
+import java.awt.*;
+class setBoundExample extends JFrame
+{
+	JPanel pan;
+	JLabel lname,lage;
+	JTextField tname,tage;
+	JButton  submit,cancel;
+	
+	public setBoundExample()
+	{
+		super("Login form");
+		pan=new JPanel();
+		pan.setLayout(null);
+		add(pan);
+		lname=new JLabel("Enter name");lage=new JLabel("Enter age");
+		tname=new JTextField(20);tage=new JTextField(20);
+		submit=new JButton("Submit");cancel=new JButton("Cancel");
+		
+		lname.setBounds(10, 10, 80, 20);pan.add(lname);
+		tname.setBounds(100, 10, 100, 20);pan.add(tname);
+		
+		lage.setBounds(10, 40, 80, 20);pan.add(lage);
+		tage.setBounds(100, 40, 100, 20);pan.add(tage);
+		
+		submit.setBounds(50, 80, 100, 20);pan.add(submit);
+		cancel.setBounds(200, 80, 100, 20);pan.add(cancel);
+		
+		setSize(600,600);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+	}
+}
+	
+public class setBound {
+	public static void main(String args[]) 
+	{
+		setBoundExample sb=new setBoundExample();
+	}
+
+}

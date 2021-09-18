@@ -1,0 +1,11 @@
+
+public class StringExample1 {
+	public static void main(String args[]) {
+		String str1="Hello and Welcome";
+		int len=str1.length();
+		System.out.println("Length of String is "+len);
+		System.out.printlns(str1);
+		
+		}
+
+}

@@ -1,0 +1,20 @@
+import javax.swing.*;
+class setBoundExample extends JFrame
+{
+	JPanel pan;
+	JLabel lname,lage;
+	JTextField tname,tage;
+	JButton  submit,cancel;
+	
+	setBoundExample()
+	{
+		super("Login form");
+		pan=new JPanel();
+		pan.setBounds(null);
+		add(pan);
+	}
+}
+	
+public class setBound {
+
+}

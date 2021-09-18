@@ -1,0 +1,29 @@
+
+public class StringExample1 {
+	public static void main(String args[]) {
+		String str1="Hello and Welcome";
+		String str2="Hello and welcome";
+		int len=str1.length();
+		System.out.println("Length of String is "+len);
+		System.out.println(str1);
+		
+		if(str1.equalsIgnoreCase(str2))
+		{
+			System.out.println("Strings are same");
+		}
+		else 
+		{
+			System.out.println("Strings are not same");
+		}
+		System.out.println(str1.toUpperCase());
+		System.out.println(str1.toLowerCase());
+		
+		int ind=str1.indexOf("S");
+		
+		System.out.println(ind);
+		
+		
+		
+		}
+
+}

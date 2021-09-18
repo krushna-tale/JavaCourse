@@ -1,0 +1,6 @@
+package javalerning;
+
+public class hallo {
+  system.out.println("hello")
+
+}

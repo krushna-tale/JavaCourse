@@ -1,0 +1,65 @@
+import javax.swing.*;
+import java.awt.*;
+class detaForm1 extends JFrame
+{
+
+	JPanel pan;
+	JLabel lname,ladd,lage,lcity,lstate,lgender,lqual;
+	JTextField tname,tadd,tage;
+	JList ccity;
+	JComboBox cstate;
+	JCheckBox dip,grad,pg;
+	JRadioButton male,female;
+	JButton submit,cancel;
+	String cities[]= {"Delhi","Mumbai","Chennai","Banglor","Hydrabad","Shri Nagar","Pune"};
+	String states[]= {"Maharastra","NCR","Tamil Nadu","Kranataka","telangana","Kashmir"};
+
+
+	
+	public detaForm1() 
+	{
+		
+	    jr=new JFrame("Biodata in Swing");
+		pan =new JPanel();
+		lname= new JLabel("Enter Name");
+		ladd= new JLabel("Enter Address");
+		lage= new JLabel("Enter Age");
+		
+		ccity=new JList(cities);
+		cstate=new JComboBox(states);
+		
+		dip= new JCheckBox("Diploma in any field");
+		grad= new JCheckBox("Graduated");
+		pg= new JCheckBox("Post graduted");
+		
+		male=new JRadioButton("male");
+		female=new JRadioButton("female");
+		
+		submit=new JButton("Submit");
+		cancel=new JButton("Cancel");
+		
+		pan.add(lname);pan.add(tname);
+		pan.add(ladd);pan.add(tadd);
+		pan.add(lage);pan.add(tage);
+		pan.add(lcity);pan.add(ccity);
+		pan.add(lstate);pan.add(cstate);
+		pan.add(lgender);pan.add(male);pan.add(female);
+		pan.add(lqual);pan.add(dip);pan.add(grad);pan.add(pg);
+		pan.add(submit);pan.add(cancel);
+		
+		jr.add(pan);
+		jr.setSize(600,600);
+		jr.setVisible(true);
+
+	
+}
+}
+public class SwingProgram3 
+{
+	public static void main(String args[])
+	{
+		detaForm1 df =new detaForm1();
+	}
+
+}
+

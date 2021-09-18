@@ -1,0 +1,10 @@
+import javax.swing.*;
+class setBoundExample extends JFrame
+{
+	JPanel pan;
+	JLabel lname lage;
+	JTextField tname tage;
+	
+public class setBound {
+
+}

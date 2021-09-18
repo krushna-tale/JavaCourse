@@ -1,0 +1,8 @@
+package javalerning;
+
+public class kt {
+	public static void main(String args[]) {
+		System.out.println("Hello java")
+	}
+
+}

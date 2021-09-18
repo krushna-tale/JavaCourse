@@ -1,0 +1,65 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+class setBoundExample extends JFrame implements ActionListener
+{
+	JPanel pan;
+	JLabel lname,lpass;  JLabel output;
+	JTextField tname;    JPasswordField ppass;
+	JButton  submit;
+	
+	
+	public setBoundExample()
+	{
+		super("Login form");
+		pan=new JPanel();
+		pan.setLayout(null);
+		add(pan);
+		lname=new JLabel("Enter Username");lpass=new JLabel("Enter Password");
+		tname=new JTextField(20);ppass=new JPasswordField(20);
+		submit=new JButton("Login");
+		output = new JLabel("---- Output Label ----");
+		
+		lname.setBounds(10, 20, 100, 20);pan.add(lname);
+		tname.setBounds(140, 20, 100, 20);pan.add(tname);
+		
+		lpass.setBounds(10, 60, 100, 20);pan.add(lpass);
+		ppass.setBounds(140, 60, 100, 20);pan.add(ppass);
+		
+		submit.setBounds(140, 80, 80, 20);pan.add(submit);
+		
+		submit.addActionListener(this);
+		
+		output.setBounds(50, 120, 500, 20); pan.add(output);
+
+
+		
+		setSize(500,500);
+		setLocationRelativeTo(null);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setVisible(true);
+		
+	}
+	public void actionPerformed(ActionEvent evt) 
+	{
+		if(evt.getSource()==submit) 
+		{
+			String data="Username: "+ tname.getText();
+			data+=",Password: "
+					+new String(ppass.getPassword());
+			output.setText(data);
+	    }
+		
+	}
+	
+}
+	
+public class setBound 
+{
+	public static void main(String args[]) 
+	{
+		setBoundExample sb=new setBoundExample();
+	}
+
+}
